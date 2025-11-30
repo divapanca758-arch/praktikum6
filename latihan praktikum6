@@ -1,0 +1,41 @@
+import time
+
+NAMA  = ["DIVA OKTIANA PANCA RAMADANI"]
+NIM   = ('312510313')
+KELAS = ('TI.25.C5')
+print('\n')
+
+def display_cool_names():
+    print("\n")
+    for i, name in enumerate(NAMA,):
+        print(f"NAMA: {name}")
+        time.sleep(0.9)
+        print(f"NIM: {NIM}")
+        time.sleep(0.9)
+        print(f"KELAS: {KELAS}")
+        time.sleep(0.9)
+# Jalankan fungsi
+display_cool_names()
+
+import math
+# Fungsi lambda
+a = lambda x: x**2
+b = lambda x, y: math.sqrt(x**2 + y**2)
+c = lambda *args: sum(args) / len(args)
+d = lambda s: "".join(set(s))   
+
+# ==== Contoh Penggunaan ====
+
+print("=== Penggunaan Fungsi a(x) ===")
+print("a(5) =", a(5))             
+
+print("\n=== Penggunaan Fungsi b(x, y) ===")
+print("b(3, 4) =", b(3, 4))        
+
+print("\n=== Penggunaan Fungsi c(*args) ===")
+print("c(2, 4, 6) =", c(2, 4, 6))  
+
+print("\n=== Penggunaan Fungsi d(s) ===")
+print("d('halo') =", d('halo'))    
+print("d('aaaaabbbccc') =", d('aaaaabbbccc'))
+print("\n✨ Selesai! ✨")
